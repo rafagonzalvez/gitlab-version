@@ -9,6 +9,9 @@ LG="https://example.com/api/v4/version"
 #Link a la API de Docker
 LD="https://registry.hub.docker.com/v2/repositories/gitlab/gitlab-ee/tags/"
 
+#Para GitLab community edition:
+#LD="https://registry.hub.docker.com/v2/repositories/gitlab/gitlab-ce/tags/"
+
 #Versión Actual
 VA=$(curl -s --header "PRIVATE-TOKEN: $PT" $LG | cut -d',' -f1 | cut -d'"' -f4)
 
